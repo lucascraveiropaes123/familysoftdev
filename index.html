@@ -90,22 +90,20 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-box">
-                        <h1>
-                            About
-                        </h1>
-                        <hr class="divider">
+                <div class="title-box">
+                    <h1>
+                        About
+                    </h1>
+                    <hr class="divider">
 
-                        <div class="col-lg-6 col-sm-12">
-                            <img src="img/Desktop.png" class="img-responsive">
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <p>
-                                Developed by Family SoftDev, this web player lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium id lacus ut faucibus. Cras mollis lobortis sapien, a placerat sem dictum in. Donec posuere, sapien eu volutpat rutrum, mauris mauris interdum velit, nec ultrices turpis dolor ac dolor. Duis luctus nibh quis ex fermentum gravida
-                            </p>
-                            <a class="btn btn-default page-scroll" href="#how-to-use">How To Use</a>
-                        </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="img/Desktop.png" class="img-responsive">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p>
+                            Developed by Family SoftDev, this player is designed to be as simple as possible. All interactions are done with HTML, CSS and JS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium id lacus ut faucibus. Cras mollis lobortis sapien, a placerat sem dictum in. Donec posuere, sapien eu volutpat rutrum, mauris mauris interdum velit, nec ultrices turpis dolor ac dolor. Duis luctus nibh quis ex fermentum gravida
+                        </p>
+                        <a class="btn btn-default page-scroll" href="#how-to-use">How To Use</a>
                     </div>
                 </div>
             </div>
@@ -115,9 +113,56 @@
     <section id="how-to-use" class="how-to-use-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="title-box">
                     <h1>How To Use</h1>
+
+                    <hr class="divider">
+
+                    <!-- Instructions -->
+
+                    <h4><b>Getting Started</b></h4>
+
+                    <p class="simple-text">
+                        <b>1</b> - Add the following code on head of your page
+                    </p>
+
+                    <div class="well well-sm" style="text-align: left;">
+                        <code>
+                            &lt;link href="player/css/style.css" rel="stylesheet"/&gt;<br>
+                            &lt;link href="player/css/landscape.css" rel="stylesheet" media="(max-height: 400px) and (max-width: 700px)"&gt;<br>
+                            &lt;link href="player/css/animations.css" rel="stylesheet"/&gt;
+                        </code>
+                    </div>
+                    
+                    <p class="simple-text">
+                        <b>2</b> - Add the following code in the end of the body on your page
+                    </p>
+
+                    <div class="well well-sm" style="text-align: left;">
+                        <code>
+                            &lt;script src="player/js/player.js"&gt;&lt;/script&gt;
+                        </code>
+                    </div>
+
+                    <p class="simple-text">
+                        <b>3</b> - This is the player structure
+                    </p>
+
+                    <pre style="text-align: left;">
+                        player/
+                        ├── css/
+                        │   ├── animations.css
+                        │   ├── landscape.css
+                        │   └── style.css
+                        └── js/
+                            ├── img/
+                            │   └── (Here is where you add the music images)
+                            ├── musics/
+                            │   └── (Here is where you add the mp3 files)
+                            └── player.js
+                    </pre>
                 </div>
+                <a class="btn btn-default page-scroll" href="#download">Download It</a>
             </div>
         </div>
     </section>
